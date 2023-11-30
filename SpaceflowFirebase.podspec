@@ -21,10 +21,9 @@ Pod::Spec.new do |s|
   # They may need updating periodically.
   s.ios.frameworks         = 'SystemConfiguration', 'UIKit'
   s.osx.frameworks         = 'SystemConfiguration'
-  s.tvos.frameworks        = 'SystemConfiguration', 'UIKit'
   s.library                = 'c++'
-  s.ios.deployment_target  = '11.0'
-  s.osx.deployment_target  = '10.13'
+  s.swift_version     = '5.3'
+  s.ios.deployment_target  = '10.0'
   
   s.source_files = 'Sources/Firebase.h'
   
@@ -67,6 +66,7 @@ Pod::Spec.new do |s|
       
       base.resource = 'Sources/Resources/*.bundle'
       base.preserve_paths = frameworksBase
+      base.vendored_frameworks  = frameworksBase
     end
 
   end
