@@ -1,4 +1,4 @@
-firebase_firestore_version = '10.18.0a'
+firebase_firestore_version = '10.18.0c'
 
 Pod::Spec.new do |s|
   s.name                   = 'SpaceflowFirebase'
