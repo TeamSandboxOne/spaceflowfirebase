@@ -1,4 +1,4 @@
-firebase_firestore_version = '10.18.0'
+firebase_firestore_version = '10.18.0a'
 
 Pod::Spec.new do |s|
   s.name                   = 'SpaceflowFirebase'
@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
   s.description            = 'Compilation of precompiled libraries like Firebase, FireStore, GDSignIn, Analytics, Crashlytics etc, Performance, Functions etc.'
   s.homepage               = 'https://spaceflow.io'
   s.license                = 'MIT'
-  s.source                 = { :path => '.' }
   s.cocoapods_version      = '>= 1.10.0'
   s.authors                = 'Spaceflow'
   s.pod_target_xcconfig    = { 'OTHER_LDFLAGS' => '-lObjC' }
